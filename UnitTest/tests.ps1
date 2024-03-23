@@ -34,8 +34,9 @@ function run_tests_on_a_container {
         Write-Output "No se encontró el comando docker en el sistema"
         exit 1
     }
+    
 
-    & $DOCKER_CMD run --rm -v (Get-Location):/cookbooks $DOCKER_IMAGE $TEST_CMD
+    & $DOCKER_CMD run --rm -v "${CURRENT_DIR}:/cookbooks" $DOCKER_IMAGE $TEST_CMD
 }
 
 function unit_tests_on_a_container {
@@ -59,7 +60,7 @@ function unit_tests_on_a_container {
 
 function itg_tests {
     $KITCHEN_CMD = Get-Command kitchen -ErrorAction SilentlyContinue
-
+    
     Set-Location $args[0]
     & $KITCHEN_CMD test
 }
@@ -90,6 +91,8 @@ function manual {
     }
 }
 
+$CURRENT_DIR = Get-Location -PSProvider FileSystem
+
 if (-not $args) {
     manual
 } elseif ($args[0] -eq "vm") {
@@ -97,11 +100,11 @@ if (-not $args) {
 } elseif ($args[0] -eq "docker") {
     unit_tests_on_a_container
 } elseif ($args[0] -eq "database") {
-    itg_tests (Get-Location)\cookbooks\database
+    itg_tests "${CURRENT_DIR}\cookbooks\database"
 } elseif ($args[0] -eq "wordpress") {
-    itg_tests (Get-Location)\cookbooks\wordpress
+    itg_tests "${CURRENT_DIR}\cookbooks\wordpress"
 } elseif ($args[0] -eq "proxy") {
-    itg_tests (Get-Location)\cookbooks\proxy
+    itg_tests "${CURRENT_DIR}\cookbooks\proxy"
 } else {
     Write-Output "Opción inválida"
     exit 1

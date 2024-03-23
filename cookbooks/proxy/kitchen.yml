@@ -1,13 +1,10 @@
 ---
 driver:
   name: vagrant
-
-## The forwarded_port port feature lets you connect to ports on the VM guest via
-## localhost on the host.
-## see also: https://www.vagrantup.com/docs/networking/forwarded_ports.html
-
-#  network:
-#    - ["forwarded_port", {guest: 80, host: 8080}]
+  customize:
+    cableconnected1: 'on'
+  ssh:
+    insert_key: false
 
 provisioner:
   name: chef_zero
@@ -35,7 +32,7 @@ platforms:
 suites:
   - name: source
     verifier:
-      name: busser
+      name: inspec
   - name: package
     verifier:
-      name: busser
+      name: inspec

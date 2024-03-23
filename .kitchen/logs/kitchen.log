@@ -1,0 +1,29 @@
+I, [2024-03-22T00:19:56.518248 #16068]  INFO -- Kitchen: -----> Starting Kitchen (v2.2.5)
+E, [2024-03-22T00:19:56.521928 #16068] ERROR -- Kitchen: ------Exception-------
+E, [2024-03-22T00:19:56.522074 #16068] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2024-03-22T00:19:56.522134 #16068] ERROR -- Kitchen: Message: Kitchen YAML file F:/Cursos/Herramientas de Automatización/Actividad 1/Chef_Vagrant_Wp/kitchen.yml does not exist.
+E, [2024-03-22T00:19:56.522188 #16068] ERROR -- Kitchen: ----------------------
+E, [2024-03-22T00:19:56.522241 #16068] ERROR -- Kitchen: ------Backtrace-------
+E, [2024-03-22T00:19:56.522292 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/loader/yaml.rb:65:in `read'
+E, [2024-03-22T00:19:56.522344 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/config.rb:152:in `data'
+E, [2024-03-22T00:19:56.522396 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/config.rb:131:in `suites'
+E, [2024-03-22T00:19:56.522447 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/config.rb:182:in `filter_instances'
+E, [2024-03-22T00:19:56.522499 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/config.rb:141:in `build_instances'
+E, [2024-03-22T00:19:56.522550 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/config.rb:117:in `instances'
+E, [2024-03-22T00:19:56.522599 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2024-03-22T00:19:56.522660 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2024-03-22T00:19:56.522712 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/command/test.rb:40:in `block in call'
+E, [2024-03-22T00:19:56.522764 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2024-03-22T00:19:56.522816 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/command/test.rb:38:in `call'
+E, [2024-03-22T00:19:56.522868 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/cli.rb:52:in `perform'
+E, [2024-03-22T00:19:56.522920 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/cli.rb:245:in `test'
+E, [2024-03-22T00:19:56.522971 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+E, [2024-03-22T00:19:56.523038 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2024-03-22T00:19:56.523241 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+E, [2024-03-22T00:19:56.523358 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/thor-0.20.3/lib/thor/base.rb:466:in `start'
+E, [2024-03-22T00:19:56.523442 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/bin/kitchen:13:in `block in <top (required)>'
+E, [2024-03-22T00:19:56.523508 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2024-03-22T00:19:56.523632 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.2.5/bin/kitchen:13:in `<top (required)>'
+E, [2024-03-22T00:19:56.523733 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/bin/kitchen:333:in `load'
+E, [2024-03-22T00:19:56.523804 #16068] ERROR -- Kitchen: F:/opscode/chef-workstation/bin/kitchen:333:in `<main>'
+E, [2024-03-22T00:19:56.523872 #16068] ERROR -- Kitchen: ----End Backtrace-----

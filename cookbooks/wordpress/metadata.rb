@@ -1,6 +1,6 @@
 name 'wordpress'
-maintainer 'Equipo 1001 A'
-maintainer_email 'you@example.com'
+maintainer 'Hans Burg De La Cruz Acosta'
+maintainer_email 'hansdelacruzacosta@gmail.com.com'
 license 'All Rights Reserved'
 description 'Installs/Configures wordpress'
 long_description 'Installs/Configures wordpress'
